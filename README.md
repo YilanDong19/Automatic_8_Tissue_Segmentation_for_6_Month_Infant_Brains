@@ -19,20 +19,26 @@ Dong Y, Kyriakopoulou V, Grigorescu I, et al. Automatic 8-Tissue Segmentation fo
 
 # Introduction: 
 To investigate the best solution for segmenting our target dataset (6-month data), we train and compare five different DL pipelines:
-**1. AUNet (baseline)**
+
+### 1. AUNet (baseline)
+
 A MONAI Attention UNet [1] was trained on the neonatal T2w images and labels, then applied directly to real 6-month T2w images.
 
-**2. Cyc+AUNet**
+### 2. Cyc+AUNet
+
 CycleGAN [2] was employed to transform neonatal T2w images into synthesized 6-month T2w images (neonatal images with 6-month intensity contrast). At the same time, an Attention UNet was trained on these synthesized 6-month images to predict their corresponding neonatal labels.
 
-**Cyc+AUNet+VM**
+### 3. Cyc+AUNet+VM
+
 Using the pre-trained Cyc+AUNet, we further employed VoxelMorph [3] to register synthesized 6-month T2w images to the real 6-month image space (paired), and keep training the Attention UNet on the warped synthesized 6-month images to predict warped neonatal labels.
 
-**Cyc+AUNet+iBEAT**
+### 4. Cyc+AUNet+iBEAT
+
 First, we fed real 6-month T1w and T2w images into iBEAT to obtain the segmentation outputs. Second, we employed the same strategy as for Cyc+AUNet, but replaced the WM, GM and CSF segmentation outputs of Cyc+AUNet with iBEAT segmentation outputs.
 
 
-**Cyc+AUNet+iBEAT+AUNet**
+### 5. Cyc+AUNet+iBEAT+AUNet
+
 We trained a second Attention UNet on the real 6-month T1w and T2w images and their segmentation outputs from Cyc+AUNet+iBEAT.
 
 

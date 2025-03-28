@@ -1,7 +1,6 @@
 # Automatic 8 Tissue Segmentation for 6-Month Infant Brains
 The GitHub repository for the paper "Automatic 8-Tissue Segmentation for 6-Month Infant Brains" is available here.
-![image](https://github.com/Automatic_8_Tissue_Segmentation_for_6_Month_Infant_Brains/blob/main/Graph/graph.png)
-
+![image](https://github.com/YilanDong19/Automatic_8_Tissue_Segmentation_for_6_Month_Infant_Brains/blob/3af626cafa3a7eb473c2df85c5db51a30166044d/Graph/graph.png)
 
 # Paper
 

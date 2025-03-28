@@ -41,7 +41,7 @@ First, we fed real 6-month T1w and T2w images into iBEAT to obtain the segmentat
 
 We trained a second Attention UNet on the real 6-month T1w and T2w images and their segmentation outputs from Cyc+AUNet+iBEAT.
 
-
+![image](https://github.com/YilanDong19/Automatic_8_Tissue_Segmentation_for_6_Month_Infant_Brains/blob/33eb9812af6597e26ad48b20724a1b224234a305/Graph/pipelines.png)
 
 
 

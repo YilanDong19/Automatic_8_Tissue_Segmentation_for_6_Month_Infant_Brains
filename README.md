@@ -44,6 +44,12 @@ We trained a second Attention UNet on the real 6-month T1w and T2w images and th
 ![image](https://github.com/YilanDong19/Automatic_8_Tissue_Segmentation_for_6_Month_Infant_Brains/blob/33eb9812af6597e26ad48b20724a1b224234a305/Graph/pipelines.png)
 
 
+The **Cyc+AUNet+iBEAT+AUNet** pipeline demonstrated the highest performance, achieving a DICE score of 0.92, an HD95 of 1.6 𝑚𝑚, and an ASSD of 0.42 𝑚𝑚 in 6-month brain segmentation. More comparison details can be found in our paper.
+
+
+We uploaded the final segmentation models to the folder "Saved_segmentation_models"
+
+
 
 **1. Download First_step_prepare.ipynb (this file prepares everything)**
 

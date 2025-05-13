@@ -47,5 +47,5 @@ We trained a second Attention UNet on the real 6-month T1w and T2w images and th
 The **Cyc+AUNet+iBEAT+AUNet** pipeline demonstrated the highest performance, achieving a DICE score of 0.92, an HD95 of 1.6 𝑚𝑚, and an ASSD of 0.42 𝑚𝑚 in 6-month brain segmentation. More comparison details can be found in our paper.
 
 
-We uploaded the final segmentation models to the folder "Saved_segmentation_models"
+We will make the final segmentation model available through docker in the future.
 
